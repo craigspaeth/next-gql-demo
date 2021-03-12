@@ -20,5 +20,5 @@ export const queries = gql`
 `
 
 export const mutations = gql`
-  patientEdit(id: ID, data: PatientInput): Boolean  
+  patientEdit(id: ID, data: PatientInput): Patient!  
 `
