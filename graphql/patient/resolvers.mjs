@@ -18,7 +18,7 @@ export const patient = (_, args) => {
 export const patientEdit = (_, args) => {
   db.update(args.id, args.data)
   const patient = db.find(args.id)
-  return toGql(patient)
+  return true
 }
 
 export const queries = {

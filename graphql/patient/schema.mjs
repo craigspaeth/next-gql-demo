@@ -2,6 +2,7 @@ import gql from 'tagged-template-noop'
 
 export const types = gql`
   type Patient {
+    id: ID!
     firstName: String!
     lastName: String!
     isDeceased: Boolean!
@@ -20,5 +21,5 @@ export const queries = gql`
 `
 
 export const mutations = gql`
-  patientEdit(id: ID, data: PatientInput): Patient!  
+  patientEdit(id: ID, data: PatientInput): Boolean!  
 `
